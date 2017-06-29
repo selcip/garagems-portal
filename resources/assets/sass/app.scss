@@ -1,0 +1,265 @@
+@import 'variables';
+
+body {
+	height: 100%;
+	width: 100%;
+	background: url('/images/background.png') no-repeat center fixed;
+	font-family: Raleway;
+}
+
+.logo {	
+	width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+	.navbar-nav {
+	    float:none;
+	    margin:0 auto;
+	    display: block;
+	    text-align: center;
+	}
+
+	.navbar-nav > li {
+	    display: inline-block;
+	    float:none;
+	}	
+}
+
+@media screen and (max-width: 768px) {
+	.block {
+		font-size: 1.2em;
+	}
+	.row + .row, .col-md-6 + .col-md-6 {
+		margin-top: 2em;
+	}
+}
+
+.navbar-inverse {
+	background-color: $lightyellow;	
+	border-radius: 0px;
+	border: 1px solid $darkyellow;
+	.nav > li {
+		&:hover {
+			background-color: $darkyellow;
+		}
+		a {
+			color: white;
+			font-weight: bold;
+		}
+	}
+	.navbar-toggle {
+		background-color: $lightyellow;
+		border: none;
+		&:hover, &:focus {
+			background-color: $darkyellow;
+		}
+	}
+
+	.navbar-collapse {
+		border-color: $darkyellow;
+	}
+}
+
+.well {
+	border-radius: 0px;
+	border: 1px solid $grey-border;
+	box-shadow: none;
+	background-color: white;
+	&.online {
+		background-color: $lightgreen!important;
+		border-color: $green!important;
+		color: $darkgreen!important;
+		.title {
+			margin-bottom: 20px;
+			text-align: center;
+		}
+		.title span {
+		  display: none;
+		}
+		.title:after {
+			text-transform: uppercase;
+			content: "Servidor Online";
+			font-weight: 800;
+			font-size: 20px;
+		}
+	}
+
+	&.offline {
+		background-color: $lightred!important;
+		border-color: $red!important;
+		color: $darkred!important;
+		.title {
+			margin-bottom: 20px;
+			text-align: center;
+		}
+		.title span {
+			display: none;
+		}
+		.title:after {
+			text-transform: uppercase;
+			content: "Servidor Offline";
+			font-weight: 800;
+			font-size: 20px;
+		}
+	}
+}
+
+hr {
+	border-color: $darkyellow;
+}
+
+.block {
+	h4 a {
+		color: $lightyellow;
+	}
+	.block-item {
+		margin-top: 5px;	
+		a {
+			color: $lightyellow;
+			font-weight: 600;
+			&:hover {
+				text-decoration: none;
+				color: $darkyellow;
+			}
+		}
+		.data {
+			margin-left: 5px;
+			color: black;
+			font-size: 10px;
+			font-weight: 800;
+		}
+		.label-anuncio {
+			background-color: $darkyellow;
+			&:after {
+				content: "ANÚNCIO";
+			}
+		}
+		.label-enquete {
+			background-color: $darkgreen;
+			&:after {
+				content: "ENQUETE";
+			}
+		}
+		.label-forum {
+			background-color: $darkred;
+			&:after {
+				content: "FÓRUM";
+			}
+		}
+		.label-ingame {
+			background-color: $darkblue;
+			&:after {
+				content: "JOGO";
+			}
+		}
+	}
+}
+
+.row .well {
+	background-color: $body-bg;
+}
+
+.btn {
+	transition: all 0.2s ease-in-out;
+	color: white;
+	font-weight: 600;
+	border: none;
+	&.btn-primary {
+		background-color: $lightyellow;
+		&:hover {
+			background-color: $darkyellow;
+		}
+	}
+
+	&.btn-secondary {
+		background-color: $lightblue;
+		&:hover {
+			background-color: $darkblue;
+			color: white;
+		}
+	}
+}
+
+.form-title{
+	color: $lightblue;
+	font-weight: 800;
+	font-size: 14px;
+	text-align: center;
+	&+form {
+		margin-top: 15px;
+	}
+}
+
+.form-control {
+	box-shadow: none;
+	border-color: $grey-border;
+	&:focus {
+		border-color: $lightyellow;
+		box-shadow: inset 0 1px 1px $lightyellow, 0 0 2px $lightyellow;
+	}
+}
+
+.download-title {
+	color: $lightyellow;
+	font-weight: 600;
+}
+
+.download-content {
+	.btn-mega {
+		text-align: left;
+		background-color: $mega-btn;
+		&:hover {
+			background-color: red;
+			color: white
+		}
+	}
+	.btn-media-fire {
+		text-align: left;
+		background-color: $darkblue;
+		&:hover {
+			background-color: blue;
+			color: white;
+		}
+	}
+	.btn-drive {
+		text-align: left;
+		background-color: $blue;
+		&:hover {
+			background-color:$lightblue;
+			color: white;
+		}
+	}
+}
+
+.form-inline + .well {
+	margin-top: 2em;
+}
+
+ol { 
+	list-style-type: none;   
+	counter-reset: item;   
+	margin: 0;   
+	padding: 0; 
+	line-height: 1.6;
+}  
+ol > li {
+	display: table;   
+	counter-increment: item;   
+	line-height: 1.6;
+}  
+ol > li:before {   
+	content: counters(item, ".") ". ";   
+	display: table-cell;   
+	padding-right: 0.6em;     
+}  
+li ol > li {   
+	margin: 0; 
+}  
+li ol > li:before {   
+	content: counters(item, ".") " ";
+}
+
+.well .title-termo {
+	margin-top: -2em;
+	margin-bottom: 1em;
+}

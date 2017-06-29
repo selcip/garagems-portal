@@ -1,0 +1,304 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600,800,900);@charset "UTF-8";
+
+body {
+  height: 100%;
+  width: 100%;
+  background: url("/images/background.png") no-repeat center fixed;
+  font-family: Raleway;
+}
+
+.logo {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-nav {
+    float: none;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+
+  .navbar-nav > li {
+    display: inline-block;
+    float: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .block {
+    font-size: 1.2em;
+  }
+
+  .row + .row,
+  .col-md-6 + .col-md-6 {
+    margin-top: 2em;
+  }
+}
+
+.navbar-inverse {
+  background-color: #ffd567;
+  border-radius: 0px;
+  border: 1px solid #b28b24;
+}
+
+.navbar-inverse .nav > li:hover {
+  background-color: #b28b24;
+}
+
+.navbar-inverse .nav > li a {
+  color: white;
+  font-weight: bold;
+}
+
+.navbar-inverse .navbar-toggle {
+  background-color: #ffd567;
+  border: none;
+}
+
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  background-color: #b28b24;
+}
+
+.navbar-inverse .navbar-collapse {
+  border-color: #b28b24;
+}
+
+.well {
+  border-radius: 0px;
+  border: 1px solid #e3e3e3;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: white;
+}
+
+.well.online {
+  background-color: #dff0d8 !important;
+  border-color: #d0e9c6 !important;
+  color: #3c763d !important;
+}
+
+.well.online .title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.well.online .title span {
+  display: none;
+}
+
+.well.online .title:after {
+  text-transform: uppercase;
+  content: "Servidor Online";
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.well.offline {
+  background-color: #f2dede !important;
+  border-color: #ebcccc !important;
+  color: #a94442 !important;
+}
+
+.well.offline .title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.well.offline .title span {
+  display: none;
+}
+
+.well.offline .title:after {
+  text-transform: uppercase;
+  content: "Servidor Offline";
+  font-weight: 800;
+  font-size: 20px;
+}
+
+hr {
+  border-color: #b28b24;
+}
+
+.block h4 a {
+  color: #ffd567;
+}
+
+.block .block-item {
+  margin-top: 5px;
+}
+
+.block .block-item a {
+  color: #ffd567;
+  font-weight: 600;
+}
+
+.block .block-item a:hover {
+  text-decoration: none;
+  color: #b28b24;
+}
+
+.block .block-item .data {
+  margin-left: 5px;
+  color: black;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.block .block-item .label-anuncio {
+  background-color: #b28b24;
+}
+
+.block .block-item .label-anuncio:after {
+  content: "AN\DANCIO";
+}
+
+.block .block-item .label-enquete {
+  background-color: #3c763d;
+}
+
+.block .block-item .label-enquete:after {
+  content: "ENQUETE";
+}
+
+.block .block-item .label-forum {
+  background-color: #a94442;
+}
+
+.block .block-item .label-forum:after {
+  content: "F\D3RUM";
+}
+
+.block .block-item .label-ingame {
+  background-color: #3252b2;
+}
+
+.block .block-item .label-ingame:after {
+  content: "JOGO";
+}
+
+.row .well {
+  background-color: #f5f5f5;
+}
+
+.btn {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: white;
+  font-weight: 600;
+  border: none;
+}
+
+.btn.btn-primary {
+  background-color: #ffd567;
+}
+
+.btn.btn-primary:hover {
+  background-color: #b28b24;
+}
+
+.btn.btn-secondary {
+  background-color: #80a0ff;
+}
+
+.btn.btn-secondary:hover {
+  background-color: #3252b2;
+  color: white;
+}
+
+.form-title {
+  color: #80a0ff;
+  font-weight: 800;
+  font-size: 14px;
+  text-align: center;
+}
+
+.form-title + form {
+  margin-top: 15px;
+}
+
+.form-control {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: #e3e3e3;
+}
+
+.form-control:focus {
+  border-color: #ffd567;
+  -webkit-box-shadow: inset 0 1px 1px #ffd567, 0 0 2px #ffd567;
+          box-shadow: inset 0 1px 1px #ffd567, 0 0 2px #ffd567;
+}
+
+.download-title {
+  color: #ffd567;
+  font-weight: 600;
+}
+
+.download-content .btn-mega {
+  text-align: left;
+  background-color: rgba(217, 0, 7, 0.7);
+}
+
+.download-content .btn-mega:hover {
+  background-color: red;
+  color: white;
+}
+
+.download-content .btn-media-fire {
+  text-align: left;
+  background-color: #3252b2;
+}
+
+.download-content .btn-media-fire:hover {
+  background-color: blue;
+  color: white;
+}
+
+.download-content .btn-drive {
+  text-align: left;
+  background-color: #678dff;
+}
+
+.download-content .btn-drive:hover {
+  background-color: #80a0ff;
+  color: white;
+}
+
+.form-inline + .well {
+  margin-top: 2em;
+}
+
+ol {
+  list-style-type: none;
+  counter-reset: item;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+ol > li {
+  display: table;
+  counter-increment: item;
+  line-height: 1.6;
+}
+
+ol > li:before {
+  content: counters(item, ".") ". ";
+  display: table-cell;
+  padding-right: 0.6em;
+}
+
+li ol > li {
+  margin: 0;
+}
+
+li ol > li:before {
+  content: counters(item, ".") " ";
+}
+
+.well .title-termo {
+  margin-top: -2em;
+  margin-bottom: 1em;
+}
+
