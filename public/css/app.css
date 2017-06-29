@@ -252,11 +252,11 @@ hr {
 
 .download-content .btn-drive {
   text-align: left;
-  background-color: #678dff;
+  background-color: #80a0ff;
 }
 
 .download-content .btn-drive:hover {
-  background-color: #80a0ff;
+  background-color: #678dff;
   color: white;
 }
 

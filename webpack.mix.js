@@ -12,7 +12,9 @@ let mix = require('laravel-mix');
  */
 
 mix.js('resources/assets/js/app.js', 'public/js')
-    .sass('resources/assets/sass/app.scss', 'public/css').options({ processCssUrls: false })
-    .browserSync({
-      proxy: 'localhost:8000'
-    });
+  .copyDirectory('resources/assets/images', 'public/images')
+  .sass('resources/assets/sass/app.scss', 'public/css').options({ processCssUrls: false })
+  .browserSync({
+    proxy: 'localhost:8000'
+  })
+  .disableNotifications();
