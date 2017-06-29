@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600,800,900);@charset "UTF-8";
-
 body {
   height: 100%;
   width: 100%;
@@ -18,7 +17,6 @@ body {
     display: block;
     text-align: center;
   }
-
   .navbar-nav > li {
     display: inline-block;
     float: none;
@@ -29,9 +27,7 @@ body {
   .block {
     font-size: 1.2em;
   }
-
-  .row + .row,
-  .col-md-6 + .col-md-6 {
+  .row + .row, .col-md-6 + .col-md-6 {
     margin-top: 2em;
   }
 }
@@ -56,8 +52,7 @@ body {
   border: none;
 }
 
-.navbar-inverse .navbar-toggle:hover,
-.navbar-inverse .navbar-toggle:focus {
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
   background-color: #b28b24;
 }
 
@@ -301,4 +296,3 @@ li ol > li:before {
   margin-top: -2em;
   margin-bottom: 1em;
 }
-
